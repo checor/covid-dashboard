@@ -6,7 +6,8 @@ from covid import fechas_peru, casos_peru
 from covid import fechas_ecuador, casos_ecuador
 from covid import fechas_brasil, casos_brasil
 
-app = dash.Dash()
+app = dash.Dash(__name__)
+server = app.server
 
 colors = {
     'background': "#111111",
