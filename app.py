@@ -16,7 +16,7 @@ colors = {
 
 app.layout = html.Div(style={'backgroundColor': colors['background']}, children=[
     html.H1(
-        children=["Mi primer dashboard"],
+        children=["Dashboard COVID-19"],
         style={
             'textAlign': 'center',
             'color': colors['text']
@@ -42,7 +42,11 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
     ),
     dcc.Markdown(children="""
     ## Casos de Covid-19
-    Este es un dashboard de ejemplo donde mostramos la información recogida de la API [covid19api.com](https://api.covid19api.com/) de diferentes países de America Latina.
+    Este es un dashboard de ejemplo donde mostramos la información recogida de la API [covid19api.com](https://api.covid19api.com/) de casos confirmados diferentes países de America Latina.
+
+    Para mostrar estos resultados, se utilizó [Dash](https://dash.plotly.com/) y [Heroku](https://dashboard.heroku.com) para subir este código a la nube.
+
+    Código fuente: https://github.com/checor/covid-dashboard
     """, style={
         'color': colors['text']
     })
