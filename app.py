@@ -1,6 +1,6 @@
-import dash
-import dash_core_components as dcc
-import dash_html_components as html
+import dash   # Servidor Flask
+import dash_core_components as dcc  # Graficacion
+import dash_html_components as html # HTML
 from covid import fechas_mexico, casos_mexico
 from covid import fechas_peru, casos_peru
 from covid import fechas_ecuador, casos_ecuador
@@ -10,13 +10,13 @@ app = dash.Dash(__name__)
 server = app.server
 
 colors = {
-    'background': "#111111",
+    'background': "lightblue",
     'text': "#7FDBFF"
 }
 
 app.layout = html.Div(style={'backgroundColor': colors['background']}, children=[
     html.H1(
-        children=["Dashboard COVID-19"],
+        children=["Dashboard COVID-19 Version 2"],
         style={
             'textAlign': 'center',
             'color': colors['text']
