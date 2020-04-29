@@ -10,13 +10,13 @@ app = dash.Dash(__name__)
 server = app.server
 
 colors = {
-    'background': "lightblue",
+    'background': "#111111",
     'text': "#7FDBFF"
 }
 
 app.layout = html.Div(style={'backgroundColor': colors['background']}, children=[
     html.H1(
-        children=["Dashboard COVID-19 Version 2"],
+        children=["Dashboard COVID-19"],
         style={
             'textAlign': 'center',
             'color': colors['text']
