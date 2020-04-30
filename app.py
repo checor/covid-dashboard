@@ -26,10 +26,10 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
         id="graph1",
         figure={
             'data': [
-                {'x': fechas_mexico, 'y': casos_mexico, 'type': 'line', 'name': 'Mexico'},
-                {'x': fechas_peru, 'y': casos_peru, 'type': 'line', 'name': 'Peru'},
-                {'x': fechas_ecuador, 'y': casos_ecuador, 'type': 'line', 'name': 'Ecuador'},
-                {'x': fechas_brasil, 'y': casos_brasil, 'type': 'line', 'name': 'Brasil'},
+                {'x': fechas_mexico[:-1], 'y': casos_mexico[:-1], 'type': 'line', 'name': 'Mexico'},
+                {'x': fechas_peru[:-1], 'y': casos_peru[:-1], 'type': 'line', 'name': 'Peru'},
+                {'x': fechas_ecuador[:-1], 'y': casos_ecuador[:-1], 'type': 'line', 'name': 'Ecuador'},
+                {'x': fechas_brasil[:-1], 'y': casos_brasil[:-1], 'type': 'line', 'name': 'Brasil'},
             ],
             'layout': {
                 'plot_bgcolor': colors['background'],
